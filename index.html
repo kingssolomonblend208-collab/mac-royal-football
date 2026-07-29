@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mac-Star Football Club - Developing Champions, Building Futures">
+    <meta name="keywords" content="football, academy, training, Mac-Star">
+    <title>Mac-Star Football Club - Professional Football Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader">
+            <div class="football-loader">
+                <i class="fas fa-football"></i>
+            </div>
+            <p>MAC-STAR ACADEMY</p>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-football"></i>
+                <span>MAC-STAR ACADEMY</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#teams" class="nav-link">Teams</a></li>
+                <li><a href="#fixtures" class="nav-link">Fixtures</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#news" class="nav-link">News</a></li>
+                <li><a href="#sponsors" class="nav-link">Sponsors</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background" style="background: linear-gradient(135deg, rgba(10, 25, 47, 0.8) 0%, rgba(255, 215, 0, 0.1) 100%), url('https://images.unsplash.com/photo-1461896836934-ffe607ba8211?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80'); background-size: cover; background-position: center; background-attachment: fixed;"></div>
+        <div class="hero-content">
+            <div class="hero-logo">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+            <h1 class="hero-title">MAC-STAR FOOTBALL CLUB</h1>
+            <p class="hero-subtitle">Developing Champions, Building Futures</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Join Academy</button>
+                <button class="btn btn-secondary" onclick="document.getElementById('fixtures').scrollIntoView({behavior: 'smooth'})">View Fixtures</button>
+            </div>
+        </div>
+        <div class="scroll-indicator" id="scrollIndicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Mac-Star</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our History</h3>
+                    <p>Founded in 2026, Mac-Star Football Academy has established itself as one of the premier football academies in Nigeria. With a commitment to excellence and player development, we have nurtured few of young talents who have gone on to play at professional levels. and state tounament</p>
+                    
+                    <div class="mission-vision">
+                        <div class="mission">
+                            <h4>Our Mission</h4>
+                            <p>To develop world-class footballers through systematic training, modern facilities, and expert coaching while instilling discipline, teamwork, and sportsmanship.</p>
+                        </div>
+                        <div class="vision">
+                            <h4>Our Vision</h4>
+                            <p>To be the leading football academy producing elite athletes who excel both on and off the pitch, representing excellence in sports development.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="14">0</div>
+                        <p>Years Active</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="850">0</div>
+                        <p>Registered Players</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="23">0</div>
+                        <p>Championships Won</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="15">0</div>
+                        <p>Expert Coaches</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teams Section -->
+    <section class="teams" id="teams">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Teams</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="teams-grid">
+                <div class="team-card" style="animation-delay: 0s;">
+                    <div class="team-image">
+                        <img src="https://images.unsplash.com/photo-1517836357463-d25ddfcbf042?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="U-12 Team">
+                        <div class="team-overlay">
+                            <button class="btn btn-small">View Team</button>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>U-12 Academy</h3>
+                        <p class="coach">Coach: Marcus Thompson</p>
+                        <p class="players">28 Players</p>
+                    </div>
+                </div>
+
+                <div class="team-card" style="animation-delay: 0.1s;">
+                    <div class="team-image">
+                        <img src="https://images.unsplash.com/photo-1515632066471-a47ad25cb82a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="U-15 Team">
+                        <div class="team-overlay">
+                            <button class="btn btn-small">View Team</button>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>U-15 Academy</h3>
+                        <p class="coach">Coach: David Martinez</p>
+                        <p class="players">32 Players</p>
+                    </div>
+                </div>
+
+                <div class="team-card u18-team-card" style="animation-delay: 0.2s;">
+                    <div class="team-image">
+                        <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="U-18 Team">
+                        <div class="team-overlay">
+                            <button class="btn btn-small">View Team</button>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>U-18 Elite</h3>
+                        <p class="coach">Coach: Carlos Rodriguez</p>
+                        <p class="players">24 Players</p>
+                    </div>
+                </div>
+
+                <div class="team-card" style="animation-delay: 0.3s;">
+                    <div class="team-image">
+                        <img src="https://images.unsplash.com/photo-1509285307050-d4066910ec1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Senior Team">
+                        <div class="team-overlay">
+                            <button class="btn btn-small">View Team</button>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Senior Team</h3>
+                        <p class="coach">Coach: Antonio Silva</p>
+                        <p class="players">20 Players</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="team-modal" id="teamModal" aria-hidden="true">
+        <div class="team-modal-dialog" role="dialog" aria-modal="true" aria-label="U-18 Elite players">
+            <button class="team-modal-close" id="teamModalClose" aria-label="Close player profiles">&times;</button>
+            <div class="team-modal-header">
+                <h3>U-18 Elite Squad</h3>
+                <p>24 Players Profile</p>
+            </div>
+            <div class="team-modal-grid" id="teamModalGrid"></div>
+        </div>
+    </div>
+
+    <!-- Fixtures & Results Section -->
+    <section class="fixtures" id="fixtures">
+        <div class="container">
+            <div class="section-header">
+                <h2>Fixtures & Results</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="filter-buttons">
+              
+                <a href="./upcoming matches.html"><button class="filter-btn" data-filter="upcoming">Upcoming</button></a>
+                <a href="./completed matches.html"><button class="filter-btn" data-filter="completed">Completed</button></a>
+            </div>
+            <div class="fixtures-container" id="fixturesContainer">
+                <!-- Fixtures will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Gallery</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="gallery-grid" id="galleryGrid">
+                <div class="gallery-item" style="animation-delay: 0s;">
+                    <img src="https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Training Session">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" style="animation-delay: 0.1s;">
+                    <img src="https://images.unsplash.com/photo-1517836357463-d25ddfcbf042?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Match Day">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" style="animation-delay: 0.2s;">
+                    <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Team Celebration">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" style="animation-delay: 0.3s;">
+                    <img src="https://images.unsplash.com/photo-1509285307050-d4066910ec1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Team Photo">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" style="animation-delay: 0.4s;">
+                    <img src="https://images.unsplash.com/photo-1515632066471-a47ad25cb82a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Training Ground">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" style="animation-delay: 0.5s;">
+                    <img src="https://images.unsplash.com/photo-1575361204480-aadea25697b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Trophy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="close" id="closeLightbox">&times;</span>
+        <img class="lightbox-content" id="lightboxImg">
+    </div>
+
+    <!-- Achievements Section -->
+    <section class="achievements" id="achievements">
+        <div class="container">
+            <div class="section-header">
+                <h2>Achievements</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-card" style="animation-delay: 0s;">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>League Titles</h3>
+                    <p class="achievement-count">0</p>
+                    <p>Regional & National Championships</p>
+                </div>
+                <div class="achievement-card" style="animation-delay: 0.1s;">
+                    <div class="achievement-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Cup Victories</h3>
+                    <p class="achievement-count">0</p>
+                    <p>Prestigious Cup Competitions</p>
+                </div>
+                <div class="achievement-card" style="animation-delay: 0.2s;">
+                    <div class="achievement-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Academy Awards</h3>
+                    <p class="achievement-count">0</p>
+                    <p>Individual Player Honors</p>
+                </div>
+                <div class="achievement-card" style="animation-delay: 0.3s;">
+                    <div class="achievement-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>International</h3>
+                    <p class="achievement-count">0</p>
+                    <p>Players in Professional Leagues</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news" id="news">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest News</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="news-carousel">
+                <div class="news-container" id="newsContainer">
+                    <!-- News items will be populated by JavaScript -->
+                </div>
+                <button class="carousel-btn prev" id="prevNews">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn next" id="nextNews">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What They Say</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="testimonials-carousel">
+                <div class="testimonials-container" id="testimonialsContainer">
+                    <!-- Testimonials will be populated by JavaScript -->
+                </div>
+                <button class="carousel-btn prev" id="prevTestimonial">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn next" id="nextTestimonial">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section class="sponsors" id="sponsors">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Sponsors</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="sponsors-carousel" id="sponsorsCarousel">
+                <!-- Sponsor logos will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="Phone Number" required>
+                            <span class="error-message" id="phoneError"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <span class="form-message" id="formMessage"></span>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Plot 3/4 Mac-Royal Cresent Independence Layout<br>Nkwelle-Ezunaka,Anambra State,Nigeria</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+(234)8185947823<br>+(234)7069731713</p>
+                        </div> 
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>macstarfc@gmail.com<br>academy@macstarfc.com</p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#teams">Teams</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Club Info</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#achievements">Achievements</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get latest updates</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mac-Star Football Club. All rights reserved.</p>
+                <p>Developing Champions, Building Futures</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Floating Football Icon -->
+    <div class="floating-icon">
+        <i class="fas fa-football"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
